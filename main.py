@@ -13,12 +13,12 @@ from models.teacher import TeacherCreate, TeacherRead, TeacherUpdate
 from models.school_class import ClassCreate, ClassRead, ClassUpdate
 
 app = FastAPI(
-    title="School API (API-first)",
+    title="School API",
     description="API-first skeleton with placeholder routes for Teachers and Classes.",
     version="0.1.0",
 )
 
-# In-memory placeholders (for type hints only; routes return 501)
+# In-memory placeholders
 teachers: Dict[UUID, TeacherRead] = {}
 classes: Dict[UUID, ClassRead] = {}
 
